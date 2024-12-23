@@ -25,21 +25,131 @@
                 </div>
             </div>
             <div class="library">
-                  <div class="options">
-                        <div class="lib-option nav-option">
-                            <img src="./assests/library_icon.png">
-                            <a href="#">Your Library</a>
-                        </div>
-                        <div class="icons">
-                            <i class="fa-solid fa-plus"></i>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </div>
-                  </div>
-                  <div class="boxes"></div>
+                <div class="options">
+                    <div class="lib-option nav-option">
+                        <img src="./assests/library_icon.png">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+              </div>
+              <div class="lib-box">
+                <div class="box">
+                    <p class="box-p1">Create your first playlist</p>
+                    <p class="box-p2">It's easy, we'll help you</p>
+                    <button class="badge">Create playlist</button>
+                </div>
+                <div class="box">
+                    <p class="box-p1">Let's find some podcasts to follow</p>
+                    <p class="box-p2">We'll keep you updated on new episodes</p>
+                    <button class="badge">Browse podcasts</button>
+                </div>
+              </div>
             </div>
         </div>
-        <div class="main-content">main content</div>
-        <div class="music-player">music player</div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="./assests/backward_icon.png" >
+                    <img src="./assests/forward_icon.png" class="hide" >
+                </div>
+                <div class="sticky-nav-options">
+                    <button class="badge nav-item hide">Explore Premium</button>
+                    <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install app</button>
+                    <i class="fa-regular fa-user nav-item"></i>
+                </div>
+                
+            </div>
+           
+            <h2>Recently Played</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assests/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <h2>Trending now near you</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assests/card2img.jpeg" class="card-img">
+                    <p class="card-title">Mahiye Jinna Sohna</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./assests/card3img.jpeg" class="card-img">
+                    <p class="card-title">Mere Paas Tum Ho</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+                <div class="card">
+                    <img src="./assests/card4img.jpeg" class="card-img">
+                    <p class="card-title">Alter Ego Naa Ready</p>
+                    <p class="card-info">Your daily updates of the most played...</p>
+                </div>
+            </div>
+
+            <h2>Featured Charts</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assests/card5img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs - Global</p>
+                    <p class="card-info">Your weekly update of the most played tracks right...</p>
+                </div>
+                <div class="card">
+                    <img src="./assests/card6img.jpeg" class="card-img">
+                    <p class="card-title">Top Songs - India</p>
+                    <p class="card-info">Your weekly update of the most played tracks right...</p>
+                </div>
+                <div class="card">
+                    <img src="./assests/card1img.jpeg" class="card-img">
+                    <p class="card-title">Top 50 - Global</p>
+                    <p class="card-info">Your weekly update of the most played tracks right...</p>
+                </div>
+            </div>
+      
+            <div class="footer">
+                <div class="line"></div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album">
+                <img src="./assests/daylight.jpg" class="alblum-img" style="margin-right: 1.75rem; " >
+                <div style="margin-right: 1.75rem;" >
+                    <p>Daylight</p>
+                    <p class="alblum-text">David Kushner</p>
+                </div>
+                <i class="fa-regular fa-heart alblum-icons hide"></i>
+                <i class="fa-solid fa-tablet-screen-button alblum-icons hide "></i>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assests/player_icon1.png" class="player-control-icon">
+                    <img src="./assests/player_icon2.png" class="player-control-icon">
+                    <img src="./assests/player_icon3.png" class="player-control-icon" style="opacity: 1; height: 2rem;">
+                    <img src="./assests/player_icon4.png" class="player-control-icon">
+                    <img src="./assests/player_icon5.png" class="player-control-icon">
+                </div>
+                <div class="playback-bar">
+                    <span class="curr-time">00:00</span>
+                    <input type="range" min="0" max="100" class="progress-bar" step="1">
+                    <span class="tot-time">3:33</span>
+                </div>
+            </div>
+            <div class="controls">
+                <i class="fa-regular fa-circle-play control-icon hide"></i>
+                <i class="fa-solid fa-music control-icon hide"></i>
+                <i class="fa-solid fa-bars control-icon hide"></i>
+                <i class="fa-solid fa-house-laptop control-icon hide"></i>
+                <div class="control-sound">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" class="sound" step="1" >
+                </div>
+                <i class="fa-solid fa-down-left-and-up-right-to-center control-icon"></i>
+            </div>
+        </div>
     </div>
 </body>
 </html>
